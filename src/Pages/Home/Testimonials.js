@@ -44,7 +44,7 @@ const Testimonials = () => {
             </div>
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>
                 {
-                    reviews.map(review => <Review kew={review._id} review={review}></Review>)
+                    reviews.map(review => <Review key={review._id} review={review}></Review>)
                 }
             </div>
         </section>
